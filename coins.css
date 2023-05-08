@@ -1,0 +1,400 @@
+body{
+    background-color: #191d28;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+  }
+  .check::after{
+    color: #07acb8;
+    background-color: #07acb8;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    margin-top: 5px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: cyan;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slder::after{
+    background-color: #07acb8;
+  }
+  
+  input:checked + .slider {
+    background-color: gray;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(16px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  body {
+    font-family: "lato", sans-serif;
+  }
+  
+  .container1 {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  /* h2 {
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  h2 small {
+    font-size: 0.5em;
+  } */
+  
+  .responsive-table li {
+    border-radius: 12px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .responsive-table .table-header {
+    background-color: #191d28;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+    color: gray;
+    font-size: 20px;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.05em;
+  }
+  .responsive-table .table-row {
+    background-color: #2e3241;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 20px;
+    padding-top: 17px;
+    padding-bottom: 38px;
+    font-stretch: expanded;
+    height: 20px;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+  }
+  .responsive-table .col-1 {
+    flex-basis: 10%;
+  }
+  .responsive-table .col-2 {
+    flex-basis: 20%;
+  }
+  .responsive-table .col-3 {
+    flex-basis: 20%;
+  }
+  .responsive-table .col-4 {
+    flex-basis: 20%;
+  }
+  .responsive-table .col-5 {
+    flex-basis: 20%;
+  }
+  .responsive-table .col-6 {
+    flex-basis: 10%;
+  }
+  @media all and (max-width: 767px) {
+    .responsive-table .table-header {
+      display: none;
+    }
+    .responsive-table li {
+      display: block;
+    }
+    .responsive-table .col {
+      flex-basis: 100%;
+    }
+    .responsive-table .col {
+      display: flex;
+      padding: 5px 0;
+    }
+    .responsive-table .col:before {
+      color: #6C7A89;
+      padding-right: 10px;
+      content: attr(data-label);
+      flex-basis: 50%;
+      text-align: right;
+    }
+  }
+  .h1 {
+    display: block;
+    color: darkturquoise;
+    width: 100%;
+    text-align: start;
+    margin-bottom: 0;
+    margin-top: 25px;
+
+
+}
+
+.btn1 {
+    font-size: 15px;
+    background-color: aqua;
+    color: white;
+    
+    font-weight: bold;
+    height: 40px;
+    /* border: 2px solid cyan; */
+    border-radius: 10px;
+    margin-right: 10px;
+   
+}
+.btn2{
+    font-size: 15px;
+    background-color: aqua;
+    color: rgb(89, 128, 245);
+    background: none;
+    font-weight: bold;
+    height: 40px;
+    border: 1px solid rgb(89, 128, 245);
+    border-radius: 7px;
+    margin-right: 10px;
+   
+}
+
+.btn1:hover {
+    background-color: aqua;
+    color: white;
+    transition: 0.5;
+}
+
+.h6 {
+    display: block;
+    text-align: start;
+    margin-left: 47px;
+    margin-top: 10px;
+    width: 90%;
+    color: darkturquoise;
+
+
+}
+
+.selection {
+    margin-right: 10px;
+    width: 60px;
+    justify-content: center;
+    height: 35px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    border: 2px black;
+    color: white;
+    background-color: #2e3241;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+.selection1 {
+    margin-right: 10px;
+    width: 100px;
+    justify-content: center;
+    height: 35px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    /* border: 2px black; */
+    color: black;
+    background-color: rgb(38, 37, 37);
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.d1 {
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    float: left;
+    width: 33%;
+
+}
+
+.d2 {
+    float: left;
+    display: flex;
+    justify-content: center;
+    margin-top: 36px;
+    width: 33%;
+    margin-bottom: 60px;
+}
+.btn2:hover{
+  color: white;
+  background-color: rgb(89, 128, 245);
+}
+
+.table {
+    width: 100%;
+}
+
+.d3 {
+    margin-top: 36px;
+    width: 33%;
+    float: left;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 60px;
+}
+
+.radio {
+    border: 2px solid cyan;
+}
+
+tr {
+    color: aliceblue;
+}
+
+.container1 {
+    background-color: #191d28;
+}
+
+.c1 {
+    display: block;
+    margin: auto;
+    background-color: black;
+    height: 110vh;
+
+}
+
+.table {
+    /* margin-left: 30px; */
+    padding: auto;
+    width: 90%;
+    margin-left: 50px;
+
+}
+
+th {
+    color: gray;
+}
+
+tbody {
+    border-radius: 15px;
+}
+
+tr {
+    line-height: 30px;
+}
+
+.sp {
+    color: gray;
+    font-size: 20px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+}
+
+.sp1 {
+    padding-left: 45px;
+    font-family: 'Barlow', sans-serif;
+    letter-spacing: 3px;
+    /* font-family: 'Edu NSW ACT Foundation', cursive; */
+}
+
+.fa-brands {
+    color: antiquewhite;
+    fill: white;
+}
+
+.slider round {
+    fill: cyan;
+}
+
+.img {
+    border-radius: 45px;
+    border: 2px solid cyan;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.img1 {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.d-flex {
+    justify-content: center;
+    text-align: center;
+    height: 47px;
+    position: fixed;
+    margin-top: 5px;
+}
+
+.add-button {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+h5 {
+    color: gray;
+    display: inline-block;
+    margin-top: 5px;
+
+
+}
+
+h6 {
+    margin-top: 5px;
+    display: inline-block;
+    color: gray;
+    margin-bottom: 0;
+}
+
+.Support {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+
+    float: right;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
